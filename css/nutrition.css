@@ -1,0 +1,121 @@
+/* Author: Zara Teo Xiao Xuan
+Admin Number: 194123U
+*/
+@import "compass/css3";
+
+@media only screen and (max-device-width: 800px){
+  video {
+    width: 100%    !important;
+    height: auto   !important;
+  }
+}
+@media only screen and (min-device-width:801px){
+
+  .performance-facts {
+    float: right;
+  }
+}
+
+* {
+box-sizing: border-box;
+}
+.image {
+width: 280px;
+float: left;
+margin: 20px;
+}
+body {
+font-size: 12pt;
+line-height: 1.2;
+}
+.nutritional p {
+margin: 0;
+}
+.performance-facts {
+border: 1px solid black;
+height:100%;
+margin: 20px;
+width: 280px;
+padding: 0.5rem;
+table {
+border-collapse: collapse;
+}
+}
+.performance-facts__title {
+font-weight: bold;
+font-size: 2.2rem;
+line-height: 0.9;
+margin: 0 0 0.125rem 0;
+}
+.performance-facts__header {
+border-bottom: 10px solid black;
+padding: 0 0 0.125rem 0;
+margin: 0 0 0.125rem 0;
+p {
+margin: 0;
+}
+}
+.performance-facts__table {
+width: 100%;
+thead tr {
+th, td {
+  border: 0;
+}
+}
+.nutritional th, td {
+font-weight: normal;
+text-align: left;
+padding: 0.125rem 0;
+border-top: 1px solid black;
+/* nowrap means that its one whole line of words */
+white-space: nowrap;
+}
+.nutritional td {
+&:last-child {
+  text-align: right;
+}
+}
+.blank-cell {
+width: 1rem;
+border-top: 0;
+}
+.thick-row {
+th, td {
+  border-top-width: 5px;
+}
+}
+}
+.small-info {
+font-size: 0.7rem;
+}
+
+.performance-facts__table--small {
+/*inherit the styles from this selector */
+@extend .performance-facts__table;
+border-bottom: 1px solid #999;
+margin: 0 0 0.5rem 0;
+thead {
+tr {
+  border-bottom: 1px solid black;
+}
+}
+.nutritional td {
+&:last-child {
+  text-align: left;
+}
+}
+.nutritional th, td {
+border: 0;
+padding: 0;
+}
+}
+
+.text-center {
+text-align: center;
+}
+.thick-end {
+border-bottom: 10px solid black;
+}
+.thin-end {
+border-bottom: 1px solid black;
+}
